@@ -2,16 +2,19 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md p-4 flex justify-between items-center px-10">
-      <h1 className="text-2xl font-bold text-blue-600 italic">FitTrack</h1>
-      <div className="space-x-6 font-medium text-gray-700">
-        <a href="#" className="hover:text-blue-500 transition">Početna</a>
-        <a href="#" className="hover:text-blue-500 transition">Vježbe</a>
-        <a href="#" className="hover:text-blue-500 transition">Kontakt</a>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-          Prijavi se
-        </button>
+    <nav className="bg-slate-950/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-900 p-6 flex justify-between items-center px-12">
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-blue-600 rounded-lg"></div>
+        <h1 className="text-2xl font-black text-white tracking-tighter">FIT<span className="text-blue-500">TRACK</span></h1>
       </div>
+      <div className="hidden md:flex space-x-10 font-medium text-slate-400 uppercase text-xs tracking-widest">
+        <a href="#" className="hover:text-white transition">Programi</a>
+        <a href="#" className="hover:text-white transition">Oprema</a>
+        <a href="#" className="hover:text-white transition">Zajednica</a>
+      </div>
+      <button className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-blue-500 hover:text-white transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+        PRIDRUŽI SE
+      </button>
     </nav>
   );
 };
