@@ -33,6 +33,23 @@ function Register() {
     }
 
     setError('');
+    
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+const userExists = users.find(
+  (user) => user.email === formData.email
+);
+
+if (userExists) {
+  setError('Korisnik sa ovim emailom već postoji.');
+  return;
+}
+
+users.push(formData);
+
+localStorage.setItem('users', JSON.stringify(users));
+
+navigate('/login');
     console.log('Registracija uspješna!', formData);
 
     navigate('/login');
