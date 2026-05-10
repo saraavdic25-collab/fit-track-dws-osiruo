@@ -4,6 +4,7 @@ import Footer from './components/Footer'; // Importujemo Footer
 import Home from './pages/Home';
 import Vjezbe from './pages/Vjezbe';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Kontakt from './pages/Kontakt'; // Ovo ćemo napraviti u sljedećem koraku
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/vjezbe" element={<Vjezbe />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/kontakt" element={<Kontakt />} />
           </Routes>
