@@ -1,6 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+  const navigate = useNavigate();
+
+useEffect(() => {
+  const currentUser = localStorage.getItem('currentUser');
+
+  if (!currentUser) {
+    navigate('/login');
+  }
+}, [navigate]);
   // Statistički podaci
   const stats = [
     { id: 1, naslov: 'Odrađeno treninga', broj: '12', promjena: '+2 ove sedmice', boja: 'text-blue-500' },
