@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 function Dashboard() {
   const navigate = useNavigate();
+  const { currentUser, logout } = useAuth();
   const handleLogout = () => {
-  localStorage.removeItem('currentUser');
+  logout();
   navigate('/login');
 };
-
-  const currentUser = JSON.parse(
-    localStorage.getItem('currentUser')
-  );
 
   useEffect(() => {
     const currentUser = localStorage.getItem('currentUser');

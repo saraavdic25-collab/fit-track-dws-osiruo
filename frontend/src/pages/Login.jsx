@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 function Login() {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [formData, setFormData] = useState({
     email: '',
@@ -34,11 +36,7 @@ function Login() {
       return;
     }
 
-    localStorage.setItem(
-      'currentUser',
-      JSON.stringify(foundUser)
-    );
-
+    login(foundUser);
     setError('');
     navigate('/dashboard');
   };
