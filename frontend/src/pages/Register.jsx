@@ -35,6 +35,18 @@ function Register() {
     setError('');
     
     const users = JSON.parse(localStorage.getItem('users')) || [];
+    const adminExists = users.find(
+  (user) => user.email === 'admin@gmail.com'
+);
+
+if (!adminExists) {
+  users.push({
+    ime: 'Admin',
+    email: 'admin@gmail.com',
+    password: 'admin123',
+    role: 'admin',
+  });
+}
 
 const userExists = users.find(
   (user) => user.email === formData.email
@@ -45,7 +57,12 @@ if (userExists) {
   return;
 }
 
-users.push(formData);
+const newUser = {
+  ...formData,
+  role: 'guest',
+};
+
+users.push(newUser);
 
 localStorage.setItem('users', JSON.stringify(users));
 
