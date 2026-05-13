@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
   const navigate = useNavigate();
+  const handleLogout = () => {
+  localStorage.removeItem('currentUser');
+  navigate('/login');
+};
 
   const currentUser = JSON.parse(
     localStorage.getItem('currentUser')
@@ -66,6 +70,14 @@ function Dashboard() {
         <h1 className="text-3xl font-black text-white mb-8 uppercase tracking-tighter">
           Tvoj <span className="text-blue-500">Napredak</span>
         </h1>
+        <div className="flex justify-end mb-6">
+  <button
+    onClick={handleLogout}
+    className="bg-red-600 hover:bg-red-500 text-white font-bold px-5 py-3 rounded-2xl transition-all shadow-lg"
+  >
+    Odjavi se
+  </button>
+</div>
 
         {/* Korisnik */}
         <div className="mb-8 bg-slate-900/40 border border-slate-800 rounded-3xl p-5">
