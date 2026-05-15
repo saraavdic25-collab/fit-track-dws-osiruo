@@ -1,0 +1,29 @@
+{
+  "name": "fit-tracer-backend",
+  "version": "1.0.0",
+  "description": "Fit Tracer - Backend API sa json-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000 --cors --middlewares middleware.js",
+    "dev": "json-server --watch db.json --port 3000 --cors --delay 500",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fit-tracer",
+    "fitness",
+    "json-server",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

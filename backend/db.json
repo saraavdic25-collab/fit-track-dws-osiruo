@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Marko Marković",
+      "email": "marko@fittracer.com",
+      "password": "hashed_password_1",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Ana Anić",
+      "email": "ana@fittracer.com",
+      "password": "hashed_password_2",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Petar Petrović",
+      "email": "petar@fittracer.com",
+      "password": "hashed_password_3",
+      "role": "user"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "userId": 2,
+      "exerciseType": "Running",
+      "duration": 30,
+      "calories": 300,
+      "date": "2025-05-14T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "exerciseType": "Weight Training",
+      "duration": 45,
+      "calories": 350,
+      "date": "2025-05-13T18:00:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "exerciseType": "Cycling",
+      "duration": 60,
+      "calories": 400,
+      "date": "2025-05-12T07:00:00Z"
+    }
+  ],
+  "goals": [
+    {
+      "id": 1,
+      "userId": 2,
+      "goalType": "weight_loss",
+      "targetValue": 75,
+      "currentValue": 82,
+      "unit": "kg",
+      "deadline": "2025-12-31"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "goalType": "muscle_gain",
+      "targetValue": 90,
+      "currentValue": 85,
+      "unit": "kg",
+      "deadline": "2025-11-30"
+    }
+  ]
+}
