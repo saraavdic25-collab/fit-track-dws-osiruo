@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Ovdje smo dodali Link za navigaciju
 
 // Ovo su podaci koji će se prikazivati u karticama
 const vjezbePodaci = [
@@ -33,7 +34,7 @@ function Vjezbe() {
           {vjezbePodaci.map((vjezba) => (
             <div 
               key={vjezba.id} 
-              className="group bg-slate-900/30 border border-slate-800/50 p-8 rounded-[2rem] hover:border-blue-500/50 transition-all duration-500 hover:-translate-y-3 shadow-xl hover:shadow-blue-500/10"
+              className="group bg-slate-900/30 border border-slate-800/50 p-8 rounded-[2rem] hover:border-blue-500/50 transition-all duration-500 hover:-translate-y-3 shadow-xl hover:shadow-blue-500/10 flex flex-col"
             >
               <div className="flex justify-between items-start mb-8">
                 <div className="text-4xl bg-slate-800/50 w-20 h-20 flex items-center justify-center rounded-2xl group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
@@ -47,13 +48,17 @@ function Vjezbe() {
               <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 {vjezba.naziv}
               </h3>
-              <p className="text-slate-500 uppercase text-[10px] tracking-widest font-semibold mb-8">
+              <p className="text-slate-500 uppercase text-[10px] tracking-widest font-semibold mb-8 flex-grow">
                 {vjezba.kategorija}
               </p>
               
-              <button className="w-full py-4 bg-white/5 text-white rounded-2xl font-bold border border-white/5 group-hover:bg-blue-600 group-hover:border-blue-500 transition-all duration-300">
+              {/* 2. Ovdje smo button pretvorili u Link koji vodi na specifičnu vježbu */}
+              <Link 
+                to={`/vjezbe/${vjezba.id}`}
+                className="w-full py-4 bg-white/5 text-white rounded-2xl font-bold border border-white/5 group-hover:bg-blue-600 group-hover:border-blue-500 transition-all duration-300 block text-center"
+              >
                 Pogledaj detalje
-              </button>
+              </Link>
             </div>
           ))}
         </div>

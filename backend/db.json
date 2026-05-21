@@ -67,5 +67,31 @@
       "unit": "kg",
       "deadline": "2025-11-30"
     }
+  ],
+  "katalogVjezbi": [
+    {
+      "id": 1,
+      "naziv": "Bench Press",
+      "misicnaGrupa": "Grudi",
+      "tezina": "Teško",
+      "opis": "Osnovna vježba za razvoj mišića grudi, ramena i tricepsa. Lezite na klupu, uhvatite šipku malo šire od širine ramena i spuštajte je do grudi.",
+      "slika": "💪"
+    },
+    {
+      "id": 2,
+      "naziv": "Čučanj",
+      "misicnaGrupa": "Noge",
+      "tezina": "Ekstremno",
+      "opis": "Kralj svih vježbi. Aktivira cijeli donji dio tijela, uključujući kvadricepse, zadnju ložu i gluteus. Pazite na prava leđa!",
+      "slika": "🦵"
+    },
+    {
+      "id": 3,
+      "naziv": "Mrtvo dizanje",
+      "misicnaGrupa": "Leđa",
+      "tezina": "Ekstremno",
+      "opis": "Odlična vježba za cijeli zadnji lanac mišića. Stanite blizu šipke, savijte koljena, uhvatite šipku i podignite se ispravljajući leđa i noge istovremeno.",
+      "slika": "🔥"
+    }
   ]
 }
