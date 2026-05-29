@@ -4,7 +4,7 @@
   "description": "Fit Tracer - Backend API sa json-server",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000 --cors --middlewares middleware.js",
+    "start": "json-server --watch db.json --port 3000 --cors",
     "dev": "json-server --watch db.json --port 3000 --cors --delay 500",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
