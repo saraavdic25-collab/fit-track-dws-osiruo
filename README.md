@@ -584,6 +584,159 @@ Za pitanja ili probleme:
 4. Pogledaj log-ove: `docker-compose logs`
 
 ---
+# 👥 Članovi tima
 
+## Sara Avdić
+
+### DWS
+- Izrada korisničkog interfejsa u React-u
+- Razvoj stranica i komponenti aplikacije
+- Testiranje funkcionalnosti
+
+### OSiRuO
+- Dockerizacija aplikacije
+- Konfiguracija Docker Compose okruženja
+- Testiranje i održavanje deploymenta
+
+## Član 2
+
+### DWS
+- Razvoj backend funkcionalnosti
+- Kreiranje i održavanje baze podataka
+- Implementacija CRUD operacija
+
+### OSiRuO
+- Konfiguracija backend Docker image-a
+- Integracija frontend i backend servisa
+- Testiranje Docker okruženja
+
+## Član 3
+
+### DWS
+- Povezivanje frontend i backend dijela
+- Validacija podataka
+- Testiranje aplikacije
+
+### OSiRuO
+- Deploy aplikacije
+- Konfiguracija produkcijskog okruženja
+- Dokumentacija projekta
+
+---
+
+# 🛠 Tech Stack
+
+| Tehnologija | Verzija |
+|------------|----------|
+| React | 18.x |
+| Node.js | 18.x |
+| json-server | 0.17.x |
+| Docker | 24.x |
+| Docker Compose | 2.x |
+| Git | Najnovija |
+| GitHub | Cloud Repository |
+| Render | Cloud Hosting |
+
+---
+
+# 🏗 Arhitektura sistema
+
+```text
+Korisnik
+    │
+    ▼
+React Frontend
+    │
+    ▼
+json-server Backend
+    │
+    ▼
+db.json Baza Podataka
+```
+
+Docker Compose povezuje frontend i backend servise u jedinstveno okruženje.
+
+---
+
+# 🎨 Paleta boja i fontovi
+
+## Boje
+
+- Primarna: #2563EB
+- Sekundarna: #1E293B
+- Pozadina: #F8FAFC
+- Akcent: #22C55E
+
+## Fontovi
+
+- Poppins
+- Sans-serif
+
+---
+
+# 👤 Korisničke uloge
+
+## Korisnik
+
+Može:
+- pregledati treninge
+- dodavati treninge
+- pratiti napredak
+- pregledati statistiku
+
+## Administrator
+
+Može:
+- upravljati korisnicima
+- uređivati treninge
+- brisati podatke
+- pregledati sve podatke sistema
+
+---
+
+# 🌐 Produkcijski URL
+
+https://fit-track-dws-osiruo-1.onrender.com/
+
+---
+
+# 📸 Screenshots
+
+## Landing stranica
+
+*Dodati screenshot landing stranice*
+
+## Login stranica
+
+*Dodati screenshot login stranice*
+
+## Admin panel
+
+*Dodati screenshot admin panela*
+
+## Dodavanje treninga
+
+*Dodati screenshot forme za dodavanje treninga*
+
+## Mobilni prikaz
+
+*Dodati screenshot mobilnog prikaza*
+
+---
+
+# 📚 Naučene lekcije i izazovi
+
+Tokom razvoja projekta tim je stekao iskustvo u:
+
+- razvoju React aplikacija
+- radu sa REST API servisima
+- Docker kontejnerizaciji
+- korištenju Docker Compose-a
+- Git i GitHub workflow-u
+- cloud deploymentu aplikacija
+
+Najveći izazovi bili su konfiguracija Docker okruženja, povezivanje frontend i backend servisa te rješavanje problema prilikom deploymenta.
+
+U budućnosti bismo unaprijedili autentifikaciju korisnika, dodali napredniju bazu podataka i implementirali dodatne funkcionalnosti za praćenje fitness aktivnosti.
 **Fit Tracer Team** 🏋️
-**Ažurnjeno:** 2025-05-15
+
