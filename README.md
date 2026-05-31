@@ -702,27 +702,44 @@ https://fit-track-dws-osiruo-1.onrender.com/
 
 # 📸 Screenshots
 
-## Landing stranica
+## 🏠 Početna stranica
 
-*Dodati screenshot landing stranice*
+![Početna stranica](Screenshot%20(199).png)
 
-## Login stranica
-
-*Dodati screenshot login stranice*
-
-## Admin panel
-
-*Dodati screenshot admin panela*
-
-## Dodavanje treninga
-
-*Dodati screenshot forme za dodavanje treninga*
-
-## Mobilni prikaz
-
-*Dodati screenshot mobilnog prikaza*
+Prikaz početne stranice FitTrack aplikacije sa uvodnim informacijama i navigacijom.
 
 ---
+
+## 📝 Registracija korisnika
+
+![Registracija](Screenshot%20(200).png)
+
+Forma za registraciju novih korisnika i kreiranje korisničkog računa.
+
+---
+
+## 💎 Odabir plana
+
+![Planovi](Screenshot%20(201).png)
+
+Prikaz dostupnih fitness paketa i planova koje korisnici mogu odabrati.
+
+---
+
+## 🏋️ Informacije o vježbama
+
+![Vježbe](Screenshot%20(202).png)
+
+Pregled informacija o treningu, vježbama i fitness sadržajima dostupnim korisnicima.
+
+---
+
+## 📱 Mobilni prikaz
+
+![Mobilni prikaz](Screenshot%20(206).png)
+
+Responzivni prikaz aplikacije na mobilnim uređajima.
+
 
 # 📚 Naučene lekcije i izazovi
 
